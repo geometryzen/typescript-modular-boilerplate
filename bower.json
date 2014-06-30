@@ -1,0 +1,56 @@
+{
+  "name": "typescript-modular-boilerplate",
+  "version": "0.0.1",
+  "description": "Think IDE",
+  "author":
+  {
+    "name": "David Holmes",
+    "email": "david.geo.holmes@gmail.com"
+  },
+  "main": "./dist/typescript-modular-boilerplate.min.js",
+  "repository":
+  {
+    "type": "git",
+    "url": "git://github.com/geometryzen/typescript-modular-boilerplate.git"
+  },
+  "bugs":
+  {
+    "url": "https://github.com/geometryzen/typescript-modular-boilerplate/issues"
+  },
+  "licenses":
+  [
+    {
+      "type": "MIT",
+      "url": "https://github.com/geometryzen/typescript-modular-boilerplate/blob/master/LICENSE"
+    }
+  ],
+  "dependencies":
+  {
+  },
+  "devDependencies":
+  {
+    "r.js": "~2.1.14",
+    "requirejs": "~2.1.14",
+    "almond": "~0.2.9"
+  },
+  "ignore":
+  [
+    ".settings",
+    "node_modules",
+    "src",
+    "test",
+    "typings",
+    "vendor",
+    ".bowerrc",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "Jakefile.js",
+    "README.md",
+    "bower.json",
+    "build.js",
+    "grunt.js",
+    "package.json",
+    "tsd.json"
+  ]
+}
