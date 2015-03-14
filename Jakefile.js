@@ -17,13 +17,15 @@ function removeComments(xs) {
     return ['--removeComments'].concat(xs);
 }
 
-var args = removeComments(AMD(ES5(compilerSources)));
+function outDir(outDir, xs) {
+    return ['--outDir', outDir].concat(xs);
+}
+
+var args = AMD(ES5(compilerSources));
 
 // The --out option does not apply when doing external module code generation.
-// If we want concatenation then we must use something like almond.
-// The outFile parameter below is not currently used.
 desc("Builds the full libraries");
-task('compile', {async:true}, function(target, outFile, options) {
+task('compile', {async:true}, function(target, options) {
     var cmd = "tsc " + options.join(" ");
 
     // console.log(cmd + "\n");
@@ -51,6 +53,6 @@ task('compile', {async:true}, function(target, outFile, options) {
 
 // Set the default task
 task("default", function() {
-   jake.Task['compile'].invoke("JavaScript", "dist/typescript-modular-boilerplate.js", args);
-   jake.Task['compile'].invoke("d.ts files", "dist/typescript-modular-boilerplate.d.ts", ['--declaration'].concat(args));
+   jake.Task['compile'].invoke("JavaScript", args);
+   jake.Task['compile'].invoke("d.ts files", ['--declaration'].concat(outDir('dist', args)));
 });

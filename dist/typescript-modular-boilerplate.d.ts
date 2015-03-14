@@ -1,5 +1,4 @@
-//
-// typescript-modular-boilerplate.d.ts
-//
-declare module typescriptModularBoilerplate {
-}
+declare var typescriptModularBoilerplate: {
+    'VERSION': string;
+};
+export = typescriptModularBoilerplate;

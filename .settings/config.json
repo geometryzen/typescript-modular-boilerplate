@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "main": "./dist/typescript-modular-boilerplate.js",
-    "sourcePath": "app/ts",
+    "sourcePath": "src",
     "customBuild": {
         "command": "jake --jakefile Jakefile.js"
     },

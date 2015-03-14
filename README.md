@@ -51,6 +51,6 @@ Make your changes to the TypeScript files in the _src_ directory. Do not edit th
 * v0.1.0: Initial release (pending)
 
 ## License
-Copyright (c) 2014 David Holmes  
+Copyright (c) 2014-2015 David Holmes  
 Licensed under the MIT license.
 

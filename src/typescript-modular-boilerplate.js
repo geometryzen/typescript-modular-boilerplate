@@ -1,7 +1,7 @@
-define(["require", "exports", 'typescript-modular-boilerplate/core'], function(require, exports, core) {
+define(["require", "exports", 'typescript-modular-boilerplate/core'], function (require, exports, core) {
+    // Build the structure of the library here.
     var typescriptModularBoilerplate = {
-        'VERSION': core.VERSION
+        'VERSION': core.VERSION,
     };
-    
     return typescriptModularBoilerplate;
 });
