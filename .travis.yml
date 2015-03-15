@@ -5,5 +5,5 @@ node_js:
 before_script:
   - npm install -g bower
   - bower install
-  email:
-    - david.geo.holmes@gmail.com
+email:
+  - david.geo.holmes@gmail.com
