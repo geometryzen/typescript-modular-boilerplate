@@ -1,4 +1,4 @@
 declare var typescriptModularBoilerplate: {
-    'VERSION': string;
+    VERSION: string;
 };
 export = typescriptModularBoilerplate;

@@ -1,7 +1,7 @@
 {
   "name": "typescript-modular-boilerplate",
   "version": "0.0.1",
-  "description": "Think IDE",
+  "description": "TypeScript Modular Boilerplate",
   "author":
   {
     "name": "David Holmes",
@@ -29,9 +29,10 @@
   },
   "devDependencies":
   {
-    "almond": "~0.3.1",
-    "r.js": "~2.1.16",
-    "requirejs": "~2.1.16"
+    "jasmine": "2.2.1",
+    "almond": "0.3.1",
+    "r.js": "2.1.16",
+    "requirejs": "2.1.16"
   },
   "ignore":
   [

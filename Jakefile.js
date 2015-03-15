@@ -1,3 +1,6 @@
+//
+// This file is no longer used.
+//
 var fs = require("fs");
 var path = require("path");
 
@@ -28,7 +31,7 @@ desc("Builds the full libraries");
 task('compile', {async:true}, function(target, options) {
     var cmd = "tsc " + options.join(" ");
 
-    // console.log(cmd + "\n");
+    console.log(cmd + "\n");
     var ex = jake.createExec([cmd]);
 
     // Add listeners for output and error
@@ -53,6 +56,6 @@ task('compile', {async:true}, function(target, options) {
 
 // Set the default task
 task("default", function() {
-   jake.Task['compile'].invoke("JavaScript", args);
+// jake.Task['compile'].invoke("JavaScript", args);
    jake.Task['compile'].invoke("d.ts files", ['--declaration'].concat(outDir('dist', args)));
 });

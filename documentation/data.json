@@ -1,0 +1,76 @@
+{
+    "project": {
+        "name": "typescript-modular-boilerplate",
+        "description": "TypeScript Modular Boilerplate",
+        "version": "0.0.1",
+        "url": "",
+        "logo": "../assets/logo.png"
+    },
+    "files": {
+        "amd/typescript-modular-boilerplate/ajax/core.js": {
+            "name": "amd/typescript-modular-boilerplate/ajax/core.js",
+            "modules": {
+                "ajax": 1
+            },
+            "classes": {
+                "ajax.core": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "ajax": {
+            "name": "ajax",
+            "submodules": {},
+            "classes": {
+                "ajax.core": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "amd/typescript-modular-boilerplate/ajax/core.js",
+            "line": 5
+        }
+    },
+    "classes": {
+        "ajax.core": {
+            "name": "ajax.core",
+            "shortname": "ajax.core",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ajax",
+            "namespace": "",
+            "file": "amd/typescript-modular-boilerplate/ajax/core.js",
+            "line": 5,
+            "uses": [
+                "string.core"
+            ]
+        }
+    },
+    "classitems": [
+        {
+            "file": "amd/typescript-modular-boilerplate/ajax/core.js",
+            "line": 9,
+            "description": "Returns a welcome string.",
+            "itemtype": "method",
+            "name": "sayHi",
+            "static": 1,
+            "return": {
+                "description": "The welcome string.",
+                "type": "String"
+            },
+            "class": "ajax.core",
+            "module": "ajax"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " amd/typescript-modular-boilerplate/ajax/core.js:9"
+        }
+    ]
+}
