@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
     // Task configuration.
     clean: {
-      src: ['dist','amd','cjs']
+      src: ['dist', 'amd', 'cjs']
     },
 
     requirejs: {
@@ -26,6 +26,14 @@ module.exports = function(grunt) {
       dist: {
         src: 'dist/typescript-modular-boilerplate.js',
         dest: 'dist/typescript-modular-boilerplate.min.js'
+      }
+    },
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'amd/',
+        src: ['**'],
+        dest: 'dist/'
       }
     },
     connect: {
@@ -113,8 +121,9 @@ module.exports = function(grunt) {
       });
     });
   }
-  // Load external tasks
+
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
@@ -172,5 +181,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('docs', ['yuidoc']);
 
-  grunt.registerTask('default', ['clean', 'buildAMD', 'buildCJS', 'jshint', 'docs', 'test', 'complexity']);
+  grunt.registerTask('default', ['clean', 'buildAMD', 'buildCJS', 'jshint', 'docs', 'test', 'complexity', 'copy', 'requirejs', 'uglify']);
 };
