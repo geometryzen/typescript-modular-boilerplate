@@ -1,8 +1,10 @@
-# typescript-modular-boilerplate
-
-TypeScript Modular Boilerplate.
+# Welcome to TypeScript Modular Boilerplate
 
 Work in TypeScript, generate JavaScript and requirejs modules.
+
+(An example project using TypeScript that compiles to AMD and CommonJS).
+
+[![Build Status](https://travis-ci.org/geometryzen/typescript-modular-boilerplate.png)](https://travis-ci.org/geometryzen/typescript-modular-boilerplate)
 
 ## Contributing
 
