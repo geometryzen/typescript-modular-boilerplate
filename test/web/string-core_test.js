@@ -5,7 +5,7 @@ define([
     core,
     ajax
 ) {
-    describe("yadda", function() {
+    describe("string core", function() {
         it("returns a greeting when `sayHi` is called.", function() {
 
             var div = document.createElement('div');

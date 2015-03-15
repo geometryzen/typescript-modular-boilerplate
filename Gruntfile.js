@@ -14,6 +14,14 @@ module.exports = function(grunt) {
       src: ['dist', 'amd', 'cjs']
     },
 
+    exec: {
+      'test': {
+        command: 'npm test',
+        stdout: true,
+        stderr: true
+      }
+    },
+
     requirejs: {
       compile: {
         options: {
@@ -131,6 +139,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-yuidoc');
   grunt.loadNpmTasks('grunt-complexity');
+  grunt.loadNpmTasks('grunt-exec');
 
   var compilerSources = [
       "src/typescript-modular-boilerplate.ts"
@@ -181,5 +190,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('docs', ['yuidoc']);
 
-  grunt.registerTask('default', ['clean', 'buildAMD', 'buildCJS', 'jshint', 'docs', 'test', 'complexity', 'copy', 'requirejs', 'uglify']);
+  grunt.registerTask('testAll', ['exec:test', 'test']);
+
+  grunt.registerTask('default', ['clean', 'buildAMD', 'buildCJS', 'jshint', 'docs', 'complexity', 'copy', 'requirejs', 'uglify']);
 };
