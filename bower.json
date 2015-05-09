@@ -29,11 +29,11 @@
   },
   "devDependencies":
   {
-    "jasmine": "2.2.1",
     "almond": "0.3.1",
-    "r.js": "2.1.16",
-    "requirejs": "2.1.16",
-    "jscover": "http://github.com/tntim96/JSCover.git"
+    "jasmine": "2.3.2",
+    "jscover": "http://github.com/tntim96/JSCover.git",
+    "r.js": "2.1.17",
+    "requirejs": "2.1.17"
   },
   "ignore":
   [
